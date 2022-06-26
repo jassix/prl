@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+body {
+
+  // MAIN COLOR VARIABLES (c - color; h - header; subh - subHeader; g - gradient)
+
+  --chakra-colors-chakra-body-bg: #090B12;
+  --h-c: #141720;
+  --subh-c: #0e1117;
+  --subh-c-hover: rgb(35, 50, 65);
+  --subh-item-c: #BAD8F0;
+
+  // TEXT
+
+  --text-h-c: #BAD8F0;
+  --text-subh-c: #E4D7D7;
+  --text-under-c: #E4D7D7;
+  --text-contrast-c: #090B12;
+  --text-invisible-c: #848586;
+
+  // GRADIENTS
+
+  --g-linear: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+
+  // GLOBAL STYLES
+
+  transition: .2s all;
+  background-color: var(--bg-c);
+}
+
+body.light {
+  // MAIN COLOR VARIABLES (c - color; h - header; subh - subHeader; g - gradient)
+
+  --bg-c: #ecf0fd;
+  --h-c: #ffffff;
+  --subh-c: #f1f2ff;
+  --subh-item-c: #BAD8F0;
+
+  // TEXT
+
+  --text-h-c: #1e2933;
+  --text-subh-c: #363232;
+  --text-under-c: #262424;
+  --text-invisible-c: #2c2d2d;
+  --text-contrast-c: #17191f;
+
+  // GRADIENTS
+
+  --g-linear: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+
+  // GLOBAL STYLES
+
+  background-color: var(--bg-c);
+}
+
+.ddTransition-enter, .ddTransition-appear {
+  opacity: 0;
+  transform: translate3d(0px, -100%, 0em);
+}
+.ddTransition-enter-active, .ddTransition-appear-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 200ms;
+}
+.ddTransition-exit {
+  opacity: 1;
+}
+.ddTransition-exit-active {
+  opacity: 0;
+  transform: translate3d(0px, 100%, 3em);
+  transition: opacity 300ms, transform 500ms;
+}

@@ -1,0 +1,21 @@
+.ratingItem {
+  align-items: center;
+  background-color: var(--h-c);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  justify-content: center;
+  width: 350px;
+}
+
+.ratingItemContent {
+  align-items: center;
+  background-color: var(--h-c);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  justify-content: space-around;
+  width: 350px;
+}

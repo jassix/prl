@@ -1,0 +1,15 @@
+{
+  "applicationInfo": {
+    "name": "ProLeague",
+    "logo": {
+      "boldPeace": "Pro",
+      "thinPeace": "League"
+    }
+  },
+
+  "overallStyle": {
+    "sidebar": {
+      "width": 270
+    }
+  }
+}

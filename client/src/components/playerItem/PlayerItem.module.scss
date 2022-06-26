@@ -1,0 +1,13 @@
+.playerItem {
+  width: 300px;
+  height: 100px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.head img {
+  width: 80px;
+}
